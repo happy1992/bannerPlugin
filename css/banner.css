@@ -1,0 +1,13 @@
+*{margin:0;padding: 0;}
+.slider{width: 700px;height: 370px;overflow: hidden;position: relative; }
+.slider_ul{
+    width: 9999px;
+    position: absolute;
+}
+.navContainer{position: absolute;bottom: 20px;width: 100%;z-index:25;text-align: center;}
+.navContainer li{width:8px;height:8px;border-radius: 4px;-moz-border-radius:4px;-webkit-border-radius:4px;margin: 0 5px;background-color: #ffffff;display: inline-block;*display:inline;*zoom:1;line-height: 20px;float: none; cursor: pointer;}
+li a img{border: none;}
+.navContainer .banActive{background-color: #ff0000;}
+.preBtn,.nextBtn{width: 57px;height: 57px;position: absolute;top:50%;margin-top:-28px;cursor: pointer;}
+.preBtn{left: -57px;background-image: url(../images/ico-prev-banner.png);}
+.nextBtn{right: -57px;top:50%;background-image: url(../images/ico-next-banner.png);}

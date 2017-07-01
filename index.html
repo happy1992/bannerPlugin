@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>轮播插件</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="轮播图插件  https://github.com/happy1992" />
+<link rel="stylesheet" href="./css/banner.css" />
+</head>
+<body>
+    <div class="slider">
+        <ul class="slider_ul">
+            <li><a href="#"><img src="./images/11.jpg" alt="" width="700px" height="370px"/></a></li>
+            <li><a href="#"><img src="./images/22.jpg" alt="" width="700px" height="370px"/></a></li>
+            <li><a href="#"><img src="./images/33.jpg" alt="" width="700px" height="370px"/></a></li>
+            <li><a href="#"><img src="./images/44.jpg" alt="" width="700px" height="370px"/></a></li>
+        </ul>
+    </div>
+</body>
+<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
+<script src="./js/banner.js"></script>
+<script>
+
+    var bslider=new banSlider({
+        banContainer:'.slider',   //轮播图容器
+        banChild:'.slider_ul li',   //轮播元素下面的li
+        autoPlay:true,   //是否自动播放,默认自动播放
+        playSpeed:3000    //播放速度，默认3秒
+    });
+
+</script>
+</html>
